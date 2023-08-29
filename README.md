@@ -49,3 +49,19 @@ In the same directory:
 docker compose down --volumes --remove-orphans
 rm -rf ./*
 ```
+
+
+### Start everything if you are lazy
+
+```bash
+curl -LfO 'https://raw.githubusercontent.com/Kuznetsov-Danil/airflow/main/docker-compose.yaml'
+
+mkdir -p ./dags ./logs ./plugins ./config
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+
+docker compose up airflow-init
+
+docker compose up -d
+
+docker ps
+```

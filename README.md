@@ -5,7 +5,7 @@ https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index
 ### Download docker-compose file and airflow config
 ```bash
 curl -LfO 'https://raw.githubusercontent.com/Kuznetsov-Danil/airflow/main/docker-compose.yaml'
-curl -LfO 'https://raw.githubusercontent.com/Kuznetsov-Danil/airflow/main/airflow.cfg'
+# curl -LfO 'https://raw.githubusercontent.com/Kuznetsov-Danil/airflow/main/airflow.cfg'
 ```
 
 ### Make directories
@@ -24,6 +24,8 @@ Important -
 ```bash
 docker compose up airflow-init
 ```
+
+May take several minutes to pull images.
 
 ### Running Airflow
 

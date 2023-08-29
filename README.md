@@ -65,3 +65,9 @@ docker compose up -d
 
 docker ps
 ```
+
+# Check if everything is working
+
+[http://localhost:8080](http://localhost:8080) or your host at port 8080.  
+User: airflowadm  
+Password: airflowadm

@@ -4,8 +4,8 @@ https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index
 
 ### Download docker-compose file and airflow config
 ```bash
-curl -LfO 'https://github.com/Kuznetsov-Danil/airflow/blob/main/docker-compose.yaml'
-curl -LfO 'https://github.com/Kuznetsov-Danil/airflow/blob/main/airflow.cfg'
+curl -LfO 'https://raw.githubusercontent.com/Kuznetsov-Danil/airflow/main/docker-compose.yaml'
+curl -LfO 'https://raw.githubusercontent.com/Kuznetsov-Danil/airflow/main/airflow.cfg'
 ```
 
 ### Make directories

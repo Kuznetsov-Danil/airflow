@@ -2,9 +2,10 @@
 
 https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
 
-### Download docker-compose file
+### Download docker-compose file and airflow config
 ```bash
-curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.0/docker-compose.yaml'
+curl -LfO 'https://github.com/Kuznetsov-Danil/airflow/blob/main/docker-compose.yaml'
+curl -LfO 'https://github.com/Kuznetsov-Danil/airflow/blob/main/airflow.cfg'
 ```
 
 ### Make directories
@@ -36,3 +37,13 @@ docker ps
 ```
 
 Some of them may have status "unhealthy" - this is fine (probably?), DAGs will still work.
+
+### Clean-up
+
+In the same directory: 
+* delete all running containers
+* and all created files and folders
+```bash
+docker compose down --volumes --remove-orphans
+rm -rf ./*
+```

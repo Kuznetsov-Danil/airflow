@@ -53,6 +53,9 @@ rm -rf ./*
 
 ### Start everything if you are lazy
 
+Make sure you are in the directory for Airflow files!  
+You can create **/airflow** directory with `mkdir /airflow` and then go there: `cd /airflow`
+
 ```bash
 curl -LfO 'https://raw.githubusercontent.com/Kuznetsov-Danil/airflow/main/docker-compose.yaml'
 #curl -LfO 'https://raw.githubusercontent.com/Kuznetsov-Danil/airflow/main/airflow.cfg'

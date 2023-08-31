@@ -1,1 +1,2 @@
 tqdm==4.66.1
+apache-airflow-providers-mongo==3.2.1
